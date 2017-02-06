@@ -1,4 +1,5 @@
 {
+	"name": "mbabic131/php-examples",
 	"require": {
 		"monolog/monolog": "1.0.*"
 	}
