@@ -1,16 +1,16 @@
 <?php
 
 $data = [
-    'email'     => 'miro.babic@burza.hr',
+    'email'     => 'test@test.com',
     'status'    => 'subscribed',
     'firstname' => 'Marko',
-    'lastname'  => 'Babić'
+    'lastname'  => 'Babic'
 ];
 
 function addMemberToList($data) 
 {
-    $apiKey = 'cfbbd92c732772407c59a26753f1ec19-us15';
-    $listId = 'ed9488a171';
+    $apiKey = '<api_key>';
+    $listId = '<list_id>';
 
     $memberId = md5(strtolower($data['email']));
     $dataCenter = substr($apiKey,strpos($apiKey,'-')+1);
@@ -46,8 +46,8 @@ function addMemberToList($data)
 
 function updateMember($data)
 {
-    $apiKey = 'cfbbd92c732772407c59a26753f1ec19-us15';
-    $listId = 'ed9488a171';
+    $apiKey = '<api_key>';
+    $listId = '<list_id>';
 
     $memberId = md5(strtolower($data['email']));
     $dataCenter = substr($apiKey,strpos($apiKey,'-')+1);
